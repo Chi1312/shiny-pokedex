@@ -1,0 +1,114 @@
+body {
+  background-image: linear-gradient(to right, #b9e2ce, #77a08c);
+  color: white;
+  margin: 0;
+  font-family: "Press Start 2P", cursive;
+}
+
+.donate-button {
+  text-align: center;
+  color: #b9e2ce;
+  margin: 0 auto;
+  text-decoration: none;
+  text-shadow: 0 1px black;
+}
+
+.donate-button:active {
+  text-shadow: none;
+  transform: translatey(1px);
+}
+
+.donate-button:hover {
+  color: #d2f1e2;
+}
+
+.donate-container {
+  display: flex;
+  margin-bottom: 3.2rem;
+}
+
+.container {
+  padding: 40px;
+  margin: 0 auto;
+}
+
+.hr {
+  opacity: 0.2;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 54px;
+  color: #b9e2ce;
+  text-shadow: 0 5px 0 rgba(0, 0, 0, 0.3);
+}
+
+h1:hover {
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.3);
+  transform: translateY(3px);
+  cursor: crosshair;
+}
+
+#pokedex {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 20px;
+  padding-inline-start: 0;
+  margin: 25px;
+}
+
+.card {
+  list-style: none;
+  margin: 10px 30px;
+  padding: 25px 0;
+  background-color: #bbb;
+  border-radius: 15 px;
+  color: #222;
+  text-align: center;
+  border: 1px solid white;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
+}
+
+.card:hover {
+  cursor: grab;
+}
+
+.card:hover {
+  animation: animation 0.5s linear;
+}
+
+.card-title {
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 20px !important;
+}
+.card-subtitle {
+  margin-top: 24px;
+  padding-top: 10px;
+  font-size: 10px;
+  color: #666;
+  font-weight: lighter;
+}
+
+.card-image {
+  height: 180px;
+}
+
+@keyframes animation {
+  20% {
+    transform: translateY(-10px);
+    box-shadow: none;
+  }
+
+  60% {
+    transform: translateY(2px);
+  }
+
+  100% {
+    transform: translate(0);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
+  }
+}
